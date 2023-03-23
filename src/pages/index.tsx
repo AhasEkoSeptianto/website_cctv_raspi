@@ -13,14 +13,14 @@ export default function Home() {
     setInterval(() => {
       i = i + 1
       let cctv:any = document.getElementById('cctv')
-      cctv.src = "https://0892-103-119-62-46.ap.ngrok.io//capture?r" + i
+      cctv.src = "https://0892-103-119-62-46.ap.ngrok.io/capture?r" + i
     },800)
   },[])
 
   return (
     <div className='bg-black/80'>
       <div className='flex items-center justify-center h-screen'>
-        <img src="https://0892-103-119-62-46.ap.ngrok.io//capture" id='cctv' className='w-full' />
+        <img src="https://0892-103-119-62-46.ap.ngrok.io/capture" id='cctv' className='w-full' />
       </div>
     </div>
   )
